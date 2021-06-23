@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function phone (moblie, len = 3){
+            return String(mobile)//转字符串
+                .slice(0, len*-1) + "*".repeat(len);
+                //即截取从0位到倒数的第9位，加上*长度数
+        }
+        console.log(phone("9876543210", 10));
+    </script>
+</body>
+</html>
